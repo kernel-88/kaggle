@@ -1,0 +1,25 @@
+conda deactivate
+sudo apt update
+sudo apt install openjdk-17-jdk -y
+sudo update-alternatives --config java
+java --version
+sudo apt install scala -y
+spark install ubuntu
+tar -xvzf spark-4.1.1-bin-hadoop3.tgz
+cd spark-4.1.1-bin-hadoop3
+./bin/spark-shell
+nano MySparkProgram.scala
+./bin/spark-shell -i MySparkProgram.scala compilation command
+code
+
+  GNU nano 7.2                                           MySparkProgram.scala                                                     
+object MySparkProgram {
+        def main(args: Array[String]): Unit = {
+                val data = sc.parallelize(List(1, 2, 3, 4, 5))
+                println(data.reduce(_+_))
+        }
+}
+
+scala> MySparkProgram.main(Array())   run commands 
+
+are this ubuntu scala commands  
