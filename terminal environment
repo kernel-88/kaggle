@@ -1,0 +1,26 @@
+sudo apt update
+sudo apt install python3-venv python3-full -y
+
+Step 2: Create virtual environment
+python3 -m venv myenv
+
+Step 3: Activate it
+source myenv/bin/activate
+
+Step 4: Upgrade pip (important)
+pip install --upgrade pip
+
+Step 5: Install pandas
+pip install pandas
+
+Step 6: Add it to Jupyter
+pip install ipykernel
+python -m ipykernel install --user --name=myenv
+
+Step 7: Open Jupyter
+jupyter notebook
+
+Step 8: Test
+import pandas as pd
+print(pd.__version__)
+
