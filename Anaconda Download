@@ -1,0 +1,6 @@
+cd Downloads 
+bash Anaconda3-*.sh
+source ~/.bashrc
+jupyter lab
+
+are these anaconda ubuntu commands 
